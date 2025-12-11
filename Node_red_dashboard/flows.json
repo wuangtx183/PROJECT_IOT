@@ -1,0 +1,1554 @@
+[
+    {
+        "id": "78001bb6cc78aa69",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c7746713147d9d38",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "eb96b86d53777532",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "02c77d8078795f69",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#164710",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#b7b7b7",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#6db046",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#b7b7b7",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#a93d8c",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#b7b7b7",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "8c3eb7e064a41ad6",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "6f4eb77798977216",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "6d96de8884261a2e",
+        "type": "ui-page",
+        "name": "Page 2",
+        "ui": "8c3eb7e064a41ad6",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "6f4eb77798977216",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "4c5e7b688a02151e",
+        "type": "ui_tab",
+        "name": "🏠 HOME",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "52a2e29aa4b2634b",
+        "type": "ui_group",
+        "name": "",
+        "tab": "4c5e7b688a02151e",
+        "order": 1,
+        "disp": true,
+        "width": 28,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "501575da27e0c567",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "c016a517.ala.asia-southeast1.emqxsl.com",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0beca2f1ebfd5203",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#9bbe3c",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "4f567cf00fe363da",
+        "type": "ui-page",
+        "name": "Home",
+        "ui": "8c3eb7e064a41ad6",
+        "path": "/page2",
+        "icon": "home-circle-outline",
+        "layout": "grid",
+        "theme": "0beca2f1ebfd5203",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "b21e9de4955f8237",
+        "type": "ui-group",
+        "name": "Statistics",
+        "page": "4f567cf00fe363da",
+        "width": "4",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0cfdd534846a19ad",
+        "type": "ui-page",
+        "name": "Door Status",
+        "ui": "8c3eb7e064a41ad6",
+        "path": "/page3",
+        "icon": "door-sliding",
+        "layout": "grid",
+        "theme": "0beca2f1ebfd5203",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "66947ba6ebc2b2fe",
+        "type": "ui-group",
+        "name": "Control EXIT",
+        "page": "0cfdd534846a19ad",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "8e13d80d77faf2d8",
+        "type": "ui-group",
+        "name": "Control ENTRY",
+        "page": "0cfdd534846a19ad",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2b9f57be4c121d42",
+        "type": "ui-spacer",
+        "group": "66947ba6ebc2b2fe",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "a7f19e89b81ac8ba",
+        "type": "ui-spacer",
+        "group": "66947ba6ebc2b2fe",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "2527772a86e09811",
+        "type": "ui-spacer",
+        "group": "8e13d80d77faf2d8",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "4e2df9521b6752f3",
+        "type": "ui-spacer",
+        "group": "8e13d80d77faf2d8",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "9192a47a3902ad1e",
+        "type": "ui-group",
+        "name": "Status",
+        "page": "4f567cf00fe363da",
+        "width": "4",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cd0270282606fc53",
+        "type": "ui-spacer",
+        "group": "b21e9de4955f8237",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 1,
+        "width": "1",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "a02180a9d4c88323",
+        "type": "ui-spacer",
+        "group": "9192a47a3902ad1e",
+        "name": "MQTT",
+        "tooltip": "",
+        "order": 1,
+        "width": "1",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "c2d99ef58bf4ebca",
+        "type": "ui_group",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "tab": "30c3450c8fb01768",
+        "order": 2,
+        "disp": true,
+        "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fbda22f52f1c239b",
+        "type": "ui_spacer",
+        "z": "c7746713147d9d38",
+        "name": "spacer",
+        "group": "52a2e29aa4b2634b",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "7b2d25f5c7a612fe",
+        "type": "ui_spacer",
+        "z": "c7746713147d9d38",
+        "name": "spacer",
+        "group": "52a2e29aa4b2634b",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "569ee273ef3cdf96",
+        "type": "ui_spacer",
+        "z": "c7746713147d9d38",
+        "name": "spacer",
+        "group": "52a2e29aa4b2634b",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "826457f2f9866a27",
+        "type": "ui_spacer",
+        "z": "c7746713147d9d38",
+        "name": "spacer",
+        "group": "52a2e29aa4b2634b",
+        "order": 8,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "5014ad12ecc77a1a",
+        "type": "ui_spacer",
+        "z": "c7746713147d9d38",
+        "name": "spacer",
+        "group": "52a2e29aa4b2634b",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d78d6010a8d27e78",
+        "type": "ui_spacer",
+        "z": "c7746713147d9d38",
+        "name": "spacer",
+        "group": "52a2e29aa4b2634b",
+        "order": 10,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3fc6ce95af2c18ca",
+        "type": "ui_spacer",
+        "z": "c7746713147d9d38",
+        "name": "spacer",
+        "group": "52a2e29aa4b2634b",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "0e7ffb13bf6c15e7",
+        "type": "ui_spacer",
+        "z": "c7746713147d9d38",
+        "name": "spacer",
+        "group": "52a2e29aa4b2634b",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "30c3450c8fb01768",
+        "type": "ui_tab",
+        "name": "PHÂN LOẠI",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "51d7ffa70ffae0a7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "c016a517.ala.asia-southeast1.emqxsl.com",
+        "port": "8883",
+        "tls": "b0e23b8470899b66",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "5",
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b0e23b8470899b66",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "emqxsl-ca (1).crt",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "22b0247babbe1b59",
+        "type": "inject",
+        "z": "78001bb6cc78aa69",
+        "name": "inject",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "09bfd7908e881ee3"
+            ]
+        ]
+    },
+    {
+        "id": "5f9a220eacaf39bc",
+        "type": "debug",
+        "z": "78001bb6cc78aa69",
+        "name": "Output 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "569a628755d9190e",
+        "type": "debug",
+        "z": "78001bb6cc78aa69",
+        "name": "Output 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "8e5c077bea6770e5",
+        "type": "debug",
+        "z": "78001bb6cc78aa69",
+        "name": "Output 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "6d67982580bbbedd",
+        "type": "inject",
+        "z": "78001bb6cc78aa69",
+        "name": "Set state 0 - turn off",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "c002b394da701c09"
+            ]
+        ]
+    },
+    {
+        "id": "7a5fb973ef652abc",
+        "type": "inject",
+        "z": "78001bb6cc78aa69",
+        "name": "Set state 1 - send to output 1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "c002b394da701c09"
+            ]
+        ]
+    },
+    {
+        "id": "a1fc0a24977e2a5c",
+        "type": "inject",
+        "z": "78001bb6cc78aa69",
+        "name": "Set state 2 - send to output 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "2",
+        "payloadType": "num",
+        "x": 260,
+        "y": 300,
+        "wires": [
+            [
+                "c002b394da701c09"
+            ]
+        ]
+    },
+    {
+        "id": "9ea901bd47e70546",
+        "type": "inject",
+        "z": "78001bb6cc78aa69",
+        "name": "Set state 3 - send to output 3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "3",
+        "payloadType": "num",
+        "x": 260,
+        "y": 360,
+        "wires": [
+            [
+                "c002b394da701c09"
+            ]
+        ]
+    },
+    {
+        "id": "09bfd7908e881ee3",
+        "type": "function",
+        "z": "78001bb6cc78aa69",
+        "name": "function 1",
+        "func": "var state = flow.get(\"state\") || 0;\n\nif (state === 1) {\n    return [msg, null, null];   // gửi ra Output 1\n} else if (state === 2) {\n    return [null, msg, null];   // gửi ra Output 2\n} else if (state === 3) {\n    return [null, null, msg];   // gửi ra Output 3\n} else {\n    return [null, null, null];  // state = 0 thì không gửi đâu cả\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 60,
+        "wires": [
+            [
+                "5f9a220eacaf39bc",
+                "569a628755d9190e",
+                "8e5c077bea6770e5"
+            ]
+        ]
+    },
+    {
+        "id": "c002b394da701c09",
+        "type": "function",
+        "z": "78001bb6cc78aa69",
+        "name": "function 2",
+        "func": "flow.set(\"state\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b8ab342f808969d",
+        "type": "inject",
+        "z": "78001bb6cc78aa69",
+        "name": "Array of decimals",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "\"1.2, 2.5, 3.9, 4.1\"",
+        "payloadType": "json",
+        "x": 240,
+        "y": 500,
+        "wires": [
+            [
+                "973d62de4d028525"
+            ]
+        ]
+    },
+    {
+        "id": "973d62de4d028525",
+        "type": "split",
+        "z": "78001bb6cc78aa69",
+        "name": "",
+        "splt": "",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 350,
+        "y": 560,
+        "wires": [
+            [
+                "e0b20c228f17572c"
+            ]
+        ]
+    },
+    {
+        "id": "e0b20c228f17572c",
+        "type": "range",
+        "z": "78001bb6cc78aa69",
+        "minin": "0",
+        "maxin": "10",
+        "minout": "0",
+        "maxout": "10",
+        "action": "scale",
+        "round": false,
+        "property": "payload",
+        "name": "Round value",
+        "x": 530,
+        "y": 560,
+        "wires": [
+            [
+                "039e77c1abbe9ccf"
+            ]
+        ]
+    },
+    {
+        "id": "039e77c1abbe9ccf",
+        "type": "join",
+        "z": "78001bb6cc78aa69",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 690,
+        "y": 560,
+        "wires": [
+            [
+                "ac8704f33b932c63"
+            ]
+        ]
+    },
+    {
+        "id": "ac8704f33b932c63",
+        "type": "debug",
+        "z": "78001bb6cc78aa69",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "f7c1721ad2697b07",
+        "type": "inject",
+        "z": "78001bb6cc78aa69",
+        "name": "inject array",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1, 2, 3, 4, 5",
+        "payloadType": "str",
+        "x": 200,
+        "y": 700,
+        "wires": [
+            [
+                "fce46c34b0eb7da7"
+            ]
+        ]
+    },
+    {
+        "id": "fce46c34b0eb7da7",
+        "type": "split",
+        "z": "78001bb6cc78aa69",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 410,
+        "y": 700,
+        "wires": [
+            [
+                "2fdbfe7681e64621"
+            ]
+        ]
+    },
+    {
+        "id": "2fdbfe7681e64621",
+        "type": "delay",
+        "z": "78001bb6cc78aa69",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 700,
+        "wires": [
+            [
+                "ab6f48705b2f217e"
+            ]
+        ]
+    },
+    {
+        "id": "ab6f48705b2f217e",
+        "type": "debug",
+        "z": "78001bb6cc78aa69",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ce5bbb0a137cb92a",
+        "type": "inject",
+        "z": "78001bb6cc78aa69",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 900,
+        "wires": [
+            [
+                "98ee96effb3df8a6"
+            ]
+        ]
+    },
+    {
+        "id": "98ee96effb3df8a6",
+        "type": "function",
+        "z": "78001bb6cc78aa69",
+        "name": "Random error",
+        "func": "if (Math.random() < 0.5) {\n    node.error(\"Lỗi ngẫu nhiên xảy ra!\", msg); // 50% ném lỗi\n    return null;\n}\nmsg.payload = \"Thành công!\";\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 900,
+        "wires": [
+            [
+                "052b9f9439010270"
+            ]
+        ]
+    },
+    {
+        "id": "052b9f9439010270",
+        "type": "debug",
+        "z": "78001bb6cc78aa69",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "77927edb326e18b8",
+        "type": "catch",
+        "z": "78001bb6cc78aa69",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 300,
+        "y": 980,
+        "wires": [
+            [
+                "5767691d6e50aaa1",
+                "07423b42ccbe30dc"
+            ]
+        ]
+    },
+    {
+        "id": "5767691d6e50aaa1",
+        "type": "delay",
+        "z": "78001bb6cc78aa69",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 460,
+        "y": 980,
+        "wires": [
+            [
+                "98ee96effb3df8a6"
+            ]
+        ]
+    },
+    {
+        "id": "07423b42ccbe30dc",
+        "type": "debug",
+        "z": "78001bb6cc78aa69",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "a9f91f5c840f76b5",
+        "type": "ui_template",
+        "z": "c7746713147d9d38",
+        "group": "52a2e29aa4b2634b",
+        "name": "",
+        "order": 2,
+        "width": 24,
+        "height": 14,
+        "format": "<div style=\"\n    width: 100%; \n    height: 100%; \n    display: flex; \n    flex-direction: column; \n    justify-content: flex-start; /* Đẩy tất cả lên phía trên cùng */\n    overflow: hidden; \n    background-color: transparent;\">\n\n    <div style=\"\n        flex: 0 0 auto; \n        width: 100%;\n        text-align: center;\n        padding-top: 10px;\n        z-index: 10; /* Đảm bảo chữ luôn nằm đè lên trên ảnh nếu bị chồng lấn */\n        position: relative;\">\n\n        <h1 style=\"\n            margin: 0; \n            font-size: 26px; \n            font-weight: bold; \n            color: #5d4037; \n            text-transform: uppercase;\">\n            HỆ THỐNG PHÂN LOẠI HÀNG HÓA THEO MÀU SẮC\n        </h1>\n    </div>\n\n    <div style=\"\n        width: 100%;\n        display: flex;\n        justify-content: flex-end; /* Căn phải */\n        padding-right: -50px;\n        margin-right: 50px;\n        /* --- KHU VỰC CHỈNH ĐỘ SÁT --- */\n        margin-top: -120px;   /* <--- THAY ĐỔI SỐ NÀY */\n        /* Giải thích:\n           -20px: Kéo ảnh lên trên một chút.\n           -50px: Kéo ảnh lên nhiều hơn (sát rạt).\n           0px:   Vị trí mặc định.\n        */\n        /* ---------------------------- */\n        \">\n\n        <img src=\"https://ngocautomation.com/wp-content/uploads/2021/04/PIC-4.png\"\n             style=\"\n                 clip-path: inset(155px 60px 60px 60px); \n                 max-width: 80%; \n                 height: auto; \n                 object-fit: contain;\n                 display: block;\">\n    </div>\n\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1941150dbac17ffe",
+        "type": "ui_switch",
+        "z": "c7746713147d9d38",
+        "name": "",
+        "label": "OFF/ON",
+        "tooltip": "",
+        "group": "52a2e29aa4b2634b",
+        "order": 5,
+        "width": 4,
+        "height": 2,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "6463d52333f8ed5d"
+            ]
+        ]
+    },
+    {
+        "id": "d58e7db152f8a42e",
+        "type": "mqtt out",
+        "z": "c7746713147d9d38",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "501575da27e0c567",
+        "x": 770,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "fa446d8a9d7f70d3",
+        "type": "ui_template",
+        "z": "c7746713147d9d38",
+        "group": "52a2e29aa4b2634b",
+        "name": "",
+        "order": 3,
+        "width": 4,
+        "height": 2,
+        "format": "<div style=\"\n    width: 100%; \n    height: 100%; \n    display: flex; \n    justify-content: center; /* Căn giữa ngang */\n    align-items: center;     /* Căn giữa dọc */\n    background-color: transparent;\">\n\n    <div style=\"\n        /* --- KHU VỰC CHỈNH CỠ CHỮ --- */\n        font-size: 30px;     /* <--- Thay số 24 bằng số khác (ví dụ: 30, 40) */\n        /* ---------------------------- */\n        \n        font-weight: bold;   /* In đậm (xóa dòng này nếu muốn chữ thường) */\n        color: #009688;      /* Màu chữ (Hiện tại là màu Xanh cổ vịt, có thể đổi thành 'red', 'blue') */\n        text-transform: uppercase; /* Tự động viết hoa toàn bộ */\n        text-align: center;\n        margin: 0;\">\n\n        KHỞI ĐỘNG BĂNG TẢI\n\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 300,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6463d52333f8ed5d",
+        "type": "ui_template",
+        "z": "c7746713147d9d38",
+        "group": "52a2e29aa4b2634b",
+        "name": "",
+        "order": 4,
+        "width": 4,
+        "height": 2,
+        "format": "<div ng-click=\"msg.payload = !msg.payload; send(msg)\" style=\"\n    width: 100%; \n    height: 100%; \n    display: flex; \n    flex-direction: column; \n    align-items: center; \n    justify-content: center;\n    cursor: pointer; /* Biến con trỏ chuột thành hình bàn tay */\n    user-select: none; /* Chống bôi đen văn bản khi bấm nhanh */\n    outline: none;\">\n\n  <div style=\"\n        width: 60px;\n        height: 60px;      \n        border-radius: 50%; \n        border: 4px solid #555555;\n        transition: all 0.2s ease-in-out;\n        \n        /* ĐỔI MÀU: Nếu msg.payload là true (Bật) thì màu XANH, false (Tắt) thì màu XÁM */\n        background-color: {{msg.payload ? '#00FF00' : '#2b2b2b'}};\n        \n        /* HIỆU ỨNG: Khi click xuống (active) sẽ nhún nhẹ một chút cho giống nút thật */\n        transform: scale({{msg.payload ? 0.95 : 1}});\n        \n        /* TỎA SÁNG */\n        box-shadow: {{msg.payload ? '0 0 20px #00FF00, inset 0 0 10px rgba(255,255,255,0.5)' : 'inset 0 0 5px rgba(0,0,0,0.5)'}};\n    \">\n  </div>\n\n  <div style=\"\n        margin-top: 10px; \n        font-weight: bold; \n        color: #5d4037;\n        font-size: 14px;\n        text-transform: uppercase;\">\n\n    {{msg.payload ? 'ĐANG BẬT' : 'ĐANG TẮT'}}\n\n  </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 260,
+        "wires": [
+            [
+                "d58e7db152f8a42e"
+            ]
+        ]
+    },
+    {
+        "id": "4e070348ef18ec99",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "hethong/do",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "51d7ffa70ffae0a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 160,
+        "wires": [
+            [
+                "8b68b980d355d4c4"
+            ]
+        ]
+    },
+    {
+        "id": "adb94a2808e4ac9f",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "hethong/xanh",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "51d7ffa70ffae0a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "9f55d7e49af657cf"
+            ]
+        ]
+    },
+    {
+        "id": "8123591fe61c4c36",
+        "type": "mqtt in",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "topic": "hethong/vang",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "51d7ffa70ffae0a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "40eb785ee730241c"
+            ]
+        ]
+    },
+    {
+        "id": "91a178978279ae74",
+        "type": "ui_template",
+        "z": "eb96b86d53777532",
+        "group": "c2d99ef58bf4ebca",
+        "name": "",
+        "order": 1,
+        "width": 19,
+        "height": 11,
+        "format": "<div style=\"\n    width: 100%; \n    height: 100%; \n    /* Nền trong suốt để tiệp màu với Dashboard */\n    background-color: transparent; \n    padding: 20px;\n    display: flex; \n    flex-direction: column; \n    align-items: center;\n    justify-content: center; /* Căn giữa toàn bộ nội dung theo chiều dọc */\n    font-family: Arial, sans-serif;\">\n\n    <div style=\"\n        width: 100%; \n        display: flex; \n        justify-content: space-around; /* Chia đều khoảng cách ngang */\n        align-items: flex-end;         /* Căn đáy cho thẳng hàng */\n        /* Đã xóa margin-bottom vì không còn biểu đồ bên dưới */\n        \">\n\n        <div style=\"display: flex; flex-direction: column; align-items: center;\">\n            <div style=\"font-weight: bold; font-size: 24px; color: #5d4037; margin-bottom: 10px; text-align: center;\">\n                SỐ LƯỢNG:\n                <br>\n                <span style=\"font-size: 40px; color: red;\"> {{msg.payload.red || 0}}\n                </span>\n            </div>\n            <div style=\"\n                /* KÍCH THƯỚC HỘP MỚI - TO HƠN */\n                width: 150px;  /* Chiều rộng tăng lên 150px */\n                height: 120px; /* Chiều cao tăng lên 120px */\n                background-color: red; \n                border: 5px solid black;\"> </div>\n        </div>\n\n        <div style=\"display: flex; flex-direction: column; align-items: center;\">\n            <div style=\"font-weight: bold; font-size: 24px; color: #5d4037; margin-bottom: 10px; text-align: center;\">\n                SỐ LƯỢNG:\n                <br>\n                <span style=\"font-size: 40px; color: #0099ff;\">\n                    {{msg.payload.blue || 0}}\n                </span>\n            </div>\n            <div style=\"\n                width: 150px; \n                height: 120px; \n                background-color: #0099ff; \n                border: 5px solid black;\">\n            </div>\n        </div>\n\n        <div style=\"display: flex; flex-direction: column; align-items: center;\">\n            <div style=\"font-weight: bold; font-size: 24px; color: #5d4037; margin-bottom: 10px; text-align: center;\">\n                SỐ LƯỢNG:\n                <br>\n                <span style=\"font-size: 40px; color: #ffd700;\">\n                    {{msg.payload.yellow || 0}}\n                </span>\n            </div>\n            <div style=\"\n                width: 150px; \n                height: 120px; \n                background-color: yellow; \n                border: 5px solid black;\">\n            </div>\n        </div>\n    </div>\n\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 840,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b68b980d355d4c4",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 3",
+        "func": "// 1. Lưu số lượng Đỏ mới nhất vào bộ nhớ\nvar count = parseInt(msg.payload); // Chuyển chuỗi thành số\nglobal.set(\"g_red\", count);\n\n// 2. Lấy lại số lượng Xanh và Vàng cũ từ bộ nhớ\nvar blue = global.get(\"g_blue\") || 0;\nvar yellow = global.get(\"g_yellow\") || 0;\n\n// 3. Gom lại gửi đi\nmsg.payload = {\n    red: count,\n    blue: blue,\n    yellow: yellow\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 180,
+        "wires": [
+            [
+                "91a178978279ae74",
+                "853d3c7436295479"
+            ]
+        ]
+    },
+    {
+        "id": "9f55d7e49af657cf",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 4",
+        "func": "// 1. Lưu số lượng Xanh\nvar count = parseInt(msg.payload);\nglobal.set(\"g_blue\", count);\n\n// 2. Lấy Đỏ và Vàng cũ\nvar red = global.get(\"g_red\") || 0;\nvar yellow = global.get(\"g_yellow\") || 0;\n\nmsg.payload = {\n    red: red,\n    blue: count,\n    yellow: yellow\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [
+                "91a178978279ae74",
+                "853d3c7436295479"
+            ]
+        ]
+    },
+    {
+        "id": "40eb785ee730241c",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 5",
+        "func": "// 1. Lưu số lượng Vàng\nvar count = parseInt(msg.payload);\nglobal.set(\"g_yellow\", count);\n\n// 2. Lấy Đỏ và Xanh cũ\nvar red = global.get(\"g_red\") || 0;\nvar blue = global.get(\"g_blue\") || 0;\n\nmsg.payload = {\n    red: red,\n    blue: blue,\n    yellow: count\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 400,
+        "wires": [
+            [
+                "91a178978279ae74",
+                "853d3c7436295479"
+            ]
+        ]
+    },
+    {
+        "id": "2a5d276a2c797c24",
+        "type": "inject",
+        "z": "eb96b86d53777532",
+        "name": "reset",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 100,
+        "wires": [
+            [
+                "21c1c43ecd96b3e3"
+            ]
+        ]
+    },
+    {
+        "id": "21c1c43ecd96b3e3",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 6",
+        "func": "\n// 1. Đặt lại toàn bộ biến nhớ về 0\nglobal.set(\"g_red\", 0);\nglobal.set(\"g_blue\", 0);\nglobal.set(\"g_yellow\", 0);\n\n// 2. Tạo gói tin số 0 để cập nhật giao diện ngay lập tức\nmsg.payload = {\n    red: 0,\n    blue: 0,\n    yellow: 0\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 100,
+        "wires": [
+            [
+                "91a178978279ae74",
+                "853d3c7436295479"
+            ]
+        ]
+    },
+    {
+        "id": "9b971bd255916da3",
+        "type": "ui_chart",
+        "z": "eb96b86d53777532",
+        "name": "",
+        "group": "c2d99ef58bf4ebca",
+        "order": 2,
+        "width": 11,
+        "height": 11,
+        "label": "Biểu đồ",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "30",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff0000",
+            "#0000ff",
+            "#ffff00",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "853d3c7436295479",
+        "type": "function",
+        "z": "eb96b86d53777532",
+        "name": "function 7",
+        "func": "// Lấy dữ liệu từ các node trước gửi đến (hoặc mặc định là 0)\nvar r = msg.payload.red || 0;\nvar b = msg.payload.blue || 0;\nvar y = msg.payload.yellow || 0;\n\n// Cấu hình dữ liệu chuẩn cho biểu đồ 3 cột màu\nmsg.payload = [{\n    \"series\": [\"Đỏ\", \"Xanh\", \"Vàng\"], // Định nghĩa 3 đội\n    \"data\": [\n        [r], // Dữ liệu đội Đỏ\n        [b], // Dữ liệu đội Xanh\n        [y]  // Dữ liệu đội Vàng\n    ],\n    \"labels\": [\"Kết quả\"] // Tên trục hoành\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 160,
+        "wires": [
+            [
+                "9b971bd255916da3"
+            ]
+        ]
+    }
+]
