@@ -73,7 +73,7 @@ IR2 → servo2 gạt nếu màu = vàng
 
 ### DASHBOARD
 
-![TAB1](Phan_Loai_Mau_Sac/test/images/images6.png)
+![TAB1](Phan_Loai_Mau_Sac/test/images/images2.png)
 
 - QUÁ TRÌNH KHỞI ĐỘNG BĂNG TẢI
 
