@@ -1,5 +1,5 @@
 ### HỆ THỐNG PHÂN LOẠI SẢN PHẨM THEO MÀU SẮC
-Sử dụng ESP32, GIAO TIẾP MQTT, NODE-RED
+Sử dụng ESP32, GIAO THỨC MQTT, NODE-RED
 1. Đặt vấn đề
 
 Trong các dây chuyền sản xuất hiện đại, việc phân loại sản phẩm theo màu sắc đóng vai trò quan trọng nhằm đảm bảo chất lượng, tự động hóa và giảm nhân công. Tuy nhiên, các hệ thống công nghiệp thường có chi phí cao và khó triển khai cho các mô hình nhỏ, thí nghiệm hoặc học tập.
