@@ -29,10 +29,10 @@ IR2 → servo2 gạt nếu màu = vàng
 - Các servo trở lại vị trí ban đầu sau mỗi lượt gạt.
 
 LƯU ĐỒ THUẬT TOÁN
-![LƯU ĐỒ THUẬT TOÁN](test/images/images1.png)
+![LƯU ĐỒ THUẬT TOÁN](Phan_Loai_Mau_Sac/test/images/images1.png)
 
 SƠ ĐỒ LẮP ĐẶT
-![SƠ ĐỒ LẮP ĐẶT](test/images/images4.png)
+![SƠ ĐỒ LẮP ĐẶT](Phan_Loai_Mau_Sac/test/images/images4.png)
 
 ### TCS3200 → ESP32
 
@@ -68,12 +68,12 @@ SƠ ĐỒ LẮP ĐẶT
 3. KẾT QUẢ
 ### MÔ HÌNH 
 
-![MÔ HÌNH](test/images/images5.jpg)
+![MÔ HÌNH](Phan_Loai_Mau_Sac/test/images/images5.jpg)
 
 ### NODE-RED
-![TAB1](test/images/images2.png)
+![TAB1](Phan_Loai_Mau_Sac/test/images/images2.png)
 - QUÁ TRÌNH KHỞI ĐỘNG BĂNG TẢI
-![TAB2](test/images/images3.png)
+![TAB2](Phan_Loai_Mau_Sac/test/images/images3.png)
 - QUÁ TRÌNH PHÂN LOẠI SẼ ĐƯỢC BIỂU DIỄN TRÊN DASHBOARD
 
 4. KẾT LUẬN
