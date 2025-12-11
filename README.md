@@ -71,7 +71,7 @@ IR2 → servo2 gạt nếu màu = vàng
 
 ![MÔ HÌNH](Phan_Loai_Mau_Sac/test/images/images5.jpg)
 
-### NODE-RED
+### DASHBOARD
 
 ![TAB1](Phan_Loai_Mau_Sac/test/images/images2.png)
 
