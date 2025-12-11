@@ -1,0 +1,84 @@
+### HỆ THỐNG PHÂN LOẠI SẢN PHẨM THEO MÀU SẮC
+Sử dụng ESP32, GIAO TIẾP MQTT, NODE-RED
+1. Đặt vấn đề
+
+Trong các dây chuyền sản xuất hiện đại, việc phân loại sản phẩm theo màu sắc đóng vai trò quan trọng nhằm đảm bảo chất lượng, tự động hóa và giảm nhân công. Tuy nhiên, các hệ thống công nghiệp thường có chi phí cao và khó triển khai cho các mô hình nhỏ, thí nghiệm hoặc học tập.
+
+Vì vậy, mục tiêu của đề tài này là xây dựng một hệ thống phân loại sản phẩm theo màu sắc giá rẻ, dễ triển khai, sử dụng các linh kiện phổ biến như ESP32 – TCS3200 – IR – Servo. Hệ thống có thể nhận biết màu đỏ, vàng, xanh và điều khiển băng tải – servo để tách sản phẩm chính xác, mô phỏng một dây chuyền phân loại tự động thu nhỏ.
+
+2. Mô tả hệ thống
+
+Phần cứng sử dụng
+
+- ESP32 DevKit V1: SL 1 -  Vi điều khiển trung tâm 
+- Cảm biến màu TCS3200: SL 1 - Đọc màu RGB dạng tần số 
+- Cảm biến hồng ngoại IR: SL 3 - Phát hiện vật đi qua từng vị trí 
+- Servo MG90S: SL 2 - Gạt vật sang hướng theo màu 
+- Động cơ băng tải: SL 1 -  Kéo vật di chuyển
+- Driver động cơ L298N: SL 1 - Điều khiển băng tải
+- Nguồn 5V: SL 1 - Cấp servo + cảm biến
+
+Nguyên lý hoạt động
+
+- Khi vật trên băng tải đi qua cảm biến màu sắc
+- ESP32 xử lý tín hiệu và lưu lại màu đã nhận diện.
+- Khi vật đến:
+IR1 → servo1 gạt nếu màu = đỏ
+IR2 → servo2 gạt nếu màu = vàng
+- Nếu vật không thuộc 2 màu trên → đi thẳng (ví dụ màu xanh dương).
+- Các servo trở lại vị trí ban đầu sau mỗi lượt gạt.
+
+LƯU ĐỒ THUẬT TOÁN
+![LƯU ĐỒ THUẬT TOÁN](images/images1.png)
+
+SƠ ĐỒ LẮP ĐẶT
+![SƠ ĐỒ LẮP ĐẶT](images4/images1.png)
+
+### TCS3200 → ESP32
+
+| TCS3200 | ESP32 |
+|--------|-------|
+| S0 | GPIO 18 |
+| S1 | GPIO 19 |
+| S2 | GPIO 21 |
+| S3 | GPIO 22 |
+| OUT | GPIO 23 |
+| VCC | 5V |
+| GND | GND |
+
+---
+
+### Cảm biến IR → ESP32
+
+| IR | ESP32 |
+|----|--------|
+| IR1 | GPIO 32 |
+| IR2 | GPIO 27 |
+| IR3 | GPIO 33 |
+
+---
+
+### Servo → ESP32
+
+| Servo | ESP32 |
+|-------|--------|
+| Servo 1 | GPIO 26 |
+| Servo 2 | GPIO 25 |
+
+3. Kết quả
+### MÔ HÌNH 
+
+![MÔ HÌNH](images/images5.jpg)
+
+### NODE-RED
+![TAB1](images/images2.png)
+- QUÁ TRÌNH KHỞI ĐỘNG BĂNG TẢI
+![TAB2](images/images3.png)
+- QUÁ TRÌNH PHÂN LOẠI SẼ ĐƯỢC BIỂU DIỄN TRÊN DASHBOARD
+
+4. KẾT LUẬN
+- Việc sử dụng băng tải kết hợp với hệ thống cảm biến giúp quy trình phân loại diễn ra tự động, hạn chế tối đa sự can thiệp thủ công, giảm sai sót và nâng cao hiệu quả. Bên cạnh đó, việc triển khai trên PlatformIO mang lại tính mô-đun, dễ mở rộng và thuận tiện khi phát triển thêm chức năng hoặc thay đổi thuật toán.
+
+Dự án không chỉ đáp ứng yêu cầu phân loại cơ bản mà còn là nền tảng để tiếp tục phát triển các hệ thống công nghiệp thông minh hơn như phân loại đa màu, theo kích thước, theo mã QR, hoặc tích hợp IoT để giám sát từ xa. Qua đó chứng minh tính ứng dụng thực tế của các giải pháp nhúng – tự động hóa trong bài toán phân loại sản phẩm.
+
+ ### VIDEO DEMO: [![Demo Project]](https://youtu.be/Vj5yUSieV9Q)
