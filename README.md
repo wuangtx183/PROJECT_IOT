@@ -32,6 +32,7 @@ LƯU ĐỒ THUẬT TOÁN
 ![LƯU ĐỒ THUẬT TOÁN](Phan_Loai_Mau_Sac/test/images/images1.png)
 
 SƠ ĐỒ LẮP ĐẶT
+
 ![SƠ ĐỒ LẮP ĐẶT](Phan_Loai_Mau_Sac/test/images/images4.png)
 
 ### TCS3200 → ESP32
@@ -71,9 +72,13 @@ SƠ ĐỒ LẮP ĐẶT
 ![MÔ HÌNH](Phan_Loai_Mau_Sac/test/images/images5.jpg)
 
 ### NODE-RED
+
 ![TAB1](Phan_Loai_Mau_Sac/test/images/images2.png)
+
 - QUÁ TRÌNH KHỞI ĐỘNG BĂNG TẢI
+- 
 ![TAB2](Phan_Loai_Mau_Sac/test/images/images3.png)
+
 - QUÁ TRÌNH PHÂN LOẠI SẼ ĐƯỢC BIỂU DIỄN TRÊN DASHBOARD
 
 4. KẾT LUẬN
